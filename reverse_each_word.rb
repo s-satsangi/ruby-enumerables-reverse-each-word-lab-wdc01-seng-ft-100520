@@ -4,5 +4,5 @@ def reverse_each_word sentence
   sentence = ""
   array.each{|word| sentence += word.reverse + " " }
   
-  sentence.strip
+  sentence.slice(0, sentence.length-1)
 end
