@@ -1,7 +1,8 @@
 require 'pry'
 def reverse_each_word sentence 
   array = sentence.split(" ")
-  array.each{|word| word=word.reverse }
+  sentence = ""
+  array.each{|word| sentence += word.reverse }
   
   sentence=array.join(" ")
 end
